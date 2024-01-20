@@ -1,0 +1,31 @@
+.template {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.template .template-container {
+    max-width: 60%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+.matrio-logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.matrio-logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}

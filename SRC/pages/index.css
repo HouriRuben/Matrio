@@ -1,0 +1,43 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  min-width: 300px;
+  width: 100%;
+  height: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card.blue {
+  background-color: #7C98C4;
+}
+
+.card.brown {
+  background-color: #B79D59;
+}
+
+.card.gray {
+  background-color: #D0C9B7;
+}

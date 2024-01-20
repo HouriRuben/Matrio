@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    height: 3rem;
+}
+
+.navbar-button {
+    height: 3rem;
+    width: 45%;
+    color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.navbar-button.orange {
+    background-color: #FF931E;
+    justify-content: flex-start;
+    padding-left: 12%;
+}
+
+.navbar-button.pink {
+    background-color: #F20197;
+    left: calc(27.5%);
+    justify-content: flex-start;
+    padding-left: 12%;
+}
+
+.navbar-button.purple {
+    background-color: #A908F1;
+    right: 0;
+}
