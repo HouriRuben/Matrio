@@ -10,11 +10,11 @@ import asyncio
 import websockets
 
 
-folder_source = "SRC"
+folder_source = "src"
 
 path_main_css = "style.css"
 
-folder_dist = "DIST"
+folder_dist = "dist"
 
 generated_html_file_name = "index.html"
 
@@ -221,9 +221,11 @@ if __name__ == "__main__":
                 "4200",
                 "-d",
                 folder_dist,
-            ]
+            ],
+            stdout=subprocess.DEVNULL,  # Redirect stdout to DEVNULL
         )
-
+        print(f"Serving HTTP on localhost port 4200 (http://localhost:4200/) ...")
+        
         # Run the event loop
         loop.run_forever()
     except KeyboardInterrupt:
