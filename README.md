@@ -1,4 +1,4 @@
-![enter image description here](https://raw.githubusercontent.com/HouriRuben/Matrio/main/SRC/assets/matrio.svg)
+![enter image description here](https://raw.githubusercontent.com/HouriRuben/Matrio/main/src/assets/matrio.svg)
 
 Matrio is a static site generator tool in Python. It uses custom tags to facilitate the creation of HTML pages by giving users the option of dividing their static websites into components.
 
@@ -6,7 +6,16 @@ All this, while hosting the generated site (one or more pages) and with a hot re
 
 ## Prerequisites
 
-- Python 3.9 or higher
+- Python 3.9 or higher ( **python --version** to check )
+- Pip ( **pip --version** to check )
+
+**Installation prerequisites**
+
+Python 3.9 : https://www.python.org/downloads/
+
+Pip should normally be installed automatically with python, but if after checking you can't use it in your console :
+https://pip.pypa.io/en/stable/installation/
+
 
 ## Installation
 
@@ -14,9 +23,16 @@ Install the necessary dependencies with pip.
 
 - pip install -r requirements.txt
 
+or 
+
+- python -m pip install -r requirements.txt
+
 ## Generic use
 
-First, there's the project tree :
+**Command to launch matrio :**
+- python matrio.py 
+
+but first, there's the project tree :
 
 ### Tree structure :
 

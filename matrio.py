@@ -111,7 +111,7 @@ def process_pages(source_folder, target_folder):
 
 
 def create_combined_css_file():
-    with open("DIST/style.css", "w") as outfile:
+    with open("dist/style.css", "w") as outfile:
         for source_file in html_files_used:
             css_file = source_file.rsplit(".", 1)[0] + ".css"
             if os.path.exists(css_file):
@@ -154,7 +154,7 @@ def play():
         os.path.join(folder_source, "scripts"), os.path.join(folder_dist, "scripts")
     )
 
-    process_pages("SRC/pages", "dist")
+    process_pages("src/pages", "dist")
     create_combined_css_file()
 
 
@@ -215,7 +215,7 @@ if __name__ == "__main__":
         print("Starting HTTP server...")
         httpd = subprocess.Popen(
             [
-                "python3",
+                "python",
                 "-m",
                 "http.server",
                 "4200",
@@ -225,7 +225,7 @@ if __name__ == "__main__":
             stdout=subprocess.DEVNULL,  # Redirect stdout to DEVNULL
         )
         print(f"Serving HTTP on localhost port 4200 (http://localhost:4200/) ...")
-        
+
         # Run the event loop
         loop.run_forever()
     except KeyboardInterrupt:

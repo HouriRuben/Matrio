@@ -2,3 +2,4 @@ beautifulsoup4
 watchdog
 asyncio
 websockets
+lxml
