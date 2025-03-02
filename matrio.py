@@ -192,6 +192,13 @@ def start_observer():
         observer.stop()
     observer.join()
 
+def get_python_command():
+    result = subprocess.run(['command', '-v', 'python3'], capture_output=True, text=True)
+    if result.returncode == 0:
+        return 'python3'
+    else:
+        return 'python'
+
 
 async def start_websocket_server():
     start_server = websockets.serve(server, "localhost", 8765)
@@ -202,6 +209,8 @@ async def start_websocket_server():
 if __name__ == "__main__":
     # Run the logic of matrio
     play()
+
+    python_cmd = get_python_command()
 
     # Start the observer in a new thread
     observer_thread = threading.Thread(target=start_observer)
@@ -215,7 +224,7 @@ if __name__ == "__main__":
         print("Starting HTTP server...")
         httpd = subprocess.Popen(
             [
-                "python",
+                python_cmd,
                 "-m",
                 "http.server",
                 "4200",

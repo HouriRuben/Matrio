@@ -27,6 +27,12 @@ or
 
 - python -m pip install -r requirements.txt
 
+or if you have this error **This environment is externally managed** do this before :
+
+- python -m venv venv
+- source venv/bin/activate
+
+
 ## Generic use
 
 **Command to launch matrio :**
